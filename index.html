@@ -1,412 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>www.meenajQ.com</title>
-   <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-    integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-  <link rel="stylesheet" href="css/animate.css">
-</head>
-
-<body>
-  <div class="cursor1"></div>
-  <div class="cursor2"></div>
-
-  <!-- 
-  <button class="topbtn"><i class="fa-solid fa-arrow-up"></i></button> -->
-  <button class="topbtn" onclick="scrollToTop()">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-  <!-- <div id="cursor2"></div> -->
-  <section class="navigation">
-    <div class="logo wow animate__animated animate__backInUp">
-      <!-- <img src="image/image.png" alt=""> -->
-      <h1>meena nager</h1>
-    </div>
-    <div class="nav">
-      <ul>
-        <li>
-          <a href="#">home</a>
-          <a href="about.html">about</a>
-          <a href="resume.html">resume</a>
-          <a href="projects.html">projects</a>
-          <a href="contact.html">contact me</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="exp">Expense Tracker</h1>
+      <h3>current Balance</h3>
+      <h1 id="balance">$0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">
+            -$0.00
+          </p>
+        </div>
+      </div>
+      <h3>History</h3>
+      <ul id="list" class="list">
+        <li class="minus">
+          Cash <span>-$400</span>
+          <button class="delete-btn">delete</button>
         </li>
       </ul>
-    </div>
-  </section>
-  <section class="firstpage">
-    <div class="text wow animate__animated animate__fadeInDown">
-
-      <h4>hello!</h4>
-      <h1>
-        i'am meena <br />
-        nager
-      </h1>
-      <h3>Full stack web development</h3>
-      <!-- <p>
-      I am fresher, passout of 2024 <br />
-      with over life projects of <br />
-      experience
-   </p> -->
-
-      <a href="*">linkedin</a>
-      <a href="#">my works</a>
-    </div>
-    <div class="image wow animate__animated animate__fadeInLeft">
-      <img src="image/meena.png" alt="" />
-    </div>
-
-  </section>
-  <section class="about">
-    <div>
-      <div class="photo">
-        <div>
-          <img src="image/meena.png" />
-        </div>
-        <div class="about-me wow animate__animated animate__fadeInDown">
-          <pre>name :-       meena nager</pre>
-          <pre>job role :-   fullstack web development</pre>
-          <pre>experience :- file projects</pre>
-          <pre>address :-    indore mp</pre>
-        </div>
-      </div>
-      <div class="skills">
-        <h3>Skills</h3>
-        <div class="skill">
-          <p>SQL <span class="percentage">79%</span></p>
-          <div class="capsule">
-            <div class="fill" style="width: 79%;"></div>
+      <h3>Add New Transition</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text">Text</label>
+              <input type="text" id="text" placeholder="Enter Text...."/>
           </div>
-        </div>
-        <div class="skill">
-          <p>Frontend <span class="percentage">95%</span></p>
-          <div class="capsule">
-            <div class="fill" style="width: 95%;"></div>
+          <div class="form-control">
+              <label for="amount">Amount <br> (negative - expense,  positive - income )</label>
+              <input type="number" id="amount" placeholder="Enter amount..."> 
           </div>
-        </div>
-        <div class="skill">
-          <p>Backend <span class="percentage">75%</span></p>
-          <div class="capsule">
-            <div class="fill" style="width: 75%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>C++ <span class="percentage">80%</span></p>
-          <div class="capsule">
-            <div class="fill" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>Java <span class="percentage">69%</span></p>
-          <div class="capsule">
-            <div class="fill" style="width: 69%;"></div>
-          </div>
-        </div>
-      </div>
+          <button class="btn">All transaction</button>
+      </form>
     </div>
-    <div class="text-about wow animate__animated animate__fadeInLeft">
-      <h1>about me</h1>
-      <p>
-        I am a passionate and results-driven full stack web development with experience in both front-end and back-end
-        technology. With a strong foundation in javascript ,HTML, CSS, and modern frameworks like react.js and
-        bootstraps, I specialize in bulding resposive, user-frindly web application on the back-end, I am proficient in
-        serverside language such as node.js and Python and work with databases like MySQL, mongoDB <br> I am committed
-        to continous learning and always staying updateed on emerging technology and best practices
-      </p>
-      <pre><b>profile</b> :-      fullstack web development</pre>
-      <pre><b>domain</b>  :-      ratail ecommorce and digital marketing </pre>
-      <pre><b>eduction</b> :-     masters of engineering</pre>
-      <pre><b>language</b> :-     hind, english</pre>
-      <pre><b>BI tools</b> :-     microsoft power BI, tableau</pre>
-      <pre><b>other SKILLS</b> :- cloud, excel, git, wordpress, google analytics & SEO </pre>
-      <pre><b>intrest</b>  :-     dancing and singing, vitits new place, traveling, photography</pre>
-      <pre><h2 style=" margin-bottom: 40px;" >30+  Projects Compteted</h2></pre>
-      <a href="https://www.linkedin.com/feed/?trk=joogle">LinkedIn</a>
-    </div>
-  </section>
-  <section class="resume">
-    <div>
-      <h1>'resume'</h1>
-      <p>
-        Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through
-        data-driven insights. Proven expertise in data science, <br> statistical analysis, machine learning
-        algorithms and project management.
-      </p>
-    </div>
-    <div class="education">
-      <h2>"Education"</h2>
-    </div>
-    <div class="education-part wow animate__animated animate__fadeInLeft">
-      <div>
-        <h3>2025-present</h3>
-        <p>master of computer application</p>
-        <h5>medicaps university, indore MP</h5>
-        <pre>2023-25 - present</pre>
-      </div>
-      <div>
-        <h3>2020-2023</h3>
-        <p>bachelor's of degree, biothechnology</p>
-        <h5>Govt. holkar science collage indore MP</h5>
-        <pre>Grade : First division</pre>
-      </div>
-      <div>
-        <h3>2019-2020</h3>
-        <p>12th PCM</p>
-        <h5>Govt. H S school mandavar MP</h5>
-        <pre>Grade : First division</pre>
-      </div>
-    </div>
-
-    <div class="experience">
-      <h2>"experience"</h2>
-    </div>
-    <div class="experience-part">
-      <div>
-        <h3>2024-present</h3>
-        <h4>fullstack web development</h4>
-        <h5>iQuanti</h5>
-        <p>
-          iQuanti is a data-driven digital marketing analytics and solutions company,
-          helps top 100 global brands.
-        </p>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Commodi architecto sint nesciunt, adipisci laborum, voluptatibus
-            et eius asperiores accusantium possimus provident! Ea mollitia
-            nulla, est illo reiciendis culpa adipisci recusandae.
-          </li><br>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Molestiae ad debitis quasi saepe earum eligendi ab magni nisi
-            minus. Molestias pariatur cum fuga assumenda! Dolor culpa
-            laboriosam perferendis. Molestiae, deleniti?
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>2021-2024</h3>
-        <h4>Senior data analytical</h4>
-        <h5>marker</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos
-          nihil sit esse labore odit cum, molestiadoloribus quidem? Harum,
-          dolorum velit.
-        </p>
-        <ul>
-          <li>
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Commodi architecto sint nesciunt, adipisci laborum, voluptatibus
-            et eius asperiores accusantium possimus provident! Ea mollitia
-            nulla, est illo reiciendis culpa adipisci recusandae.
-
-          </li> <br>
-          <li>
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Molestiae ad debitis quasi saepe earum eligendi ab magni nisi
-            minus. Molestias pariatur cum fuga assumenda! Dolor culpa
-            laboriosam perferendis. Molestiae, deleniti?
-
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="button">
-    <div>
-      <a href="https://drive.google.com/file/d/1zU7WkRvnqCW9heW_Q1Xe1yr0MCPI3Z_Y/view?usp=drive_link">donwload cv</a>
-    </div>
-  </section>
-  <section class="project">
-    <div>
-      <h1>'projects'</h1>
-      <p>
-        Analyzed music store data using advanced SQL queires to identify gaps
-        and increase the business growth.
-      </p>
-    </div>
-    <div class="imagee">
-      <div>
-        <div>
-          <img class=" wow animate__animated animate__fadeInLeft" src="image/social-media-1024x683.webp" />
-          <h1>Social Hub</h1>
-          <h4>a social media with messages web page</h4>
-          <p>
-            social media platform with real time messaging and user intection
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img class="wow animate__animated animate__fadeInRight" src="image/Outfitted-images-by-OOTDiffusion.webp" />
-          <h1>dress me virtually</h1>
-          <h4>virtucal dress site</h4>
-          <p>
-            Designed a power bi dashboard for Madhav Store to track and
-            analyze the online sales data acorss India.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img class="wow animate__animated animate__fadeInLeft" src="image/download.jpg" />
-          <h1>notepade clone</h1>
-          <h4>notepade to save important nodes</h4>
-          <p>
-            Used multiple machine learning models to forecast sales (retail
-            store) and performed time series analysis.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img class="wow animate__animated animate__fadeInRight"
-            src="image/booking-meeting-appointment-on-laptop-260nw-1930285112.webp" />
-          <h1>appointment booling</h1>
-          <h4>book appointment</h4>
-          <p>
-            Performed exploratory data analysis on diwali sales data using
-            Python to improve the customer experience.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img class="wow animate__animated animate__fadeInLeft" src="image/proj_4.jpg" />
-          <h1>Sales Forecast- Time Series Forecasting</h1>
-          <p>
-            Developed a ML model to give various recommendations of financial
-            products & services on target customer groups
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img class="wow animate__animated animate__fadeInRight" src="image/proj_5.jpg" />
-          <h1>Customer Segmentation using clustering model</h1>
-          <p>
-            Developed a ML model to give various recommendations of financial
-            products & services on target customer groups.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="achievement">
-    <div>
-      <div>
-        <h1 class="counter" data-target="20">0</h1>
-        <h4>Achievements</h4>
-      </div>
-      <div>
-        <h1 class="counter" data-target="30">0</h1>
-        <h4>Projects</h4>
-      </div>
-      <div>
-        <h1 class="counter" data-target="1000">0</h1>
-        <h4>Mentored Students</h4>
-      </div>
-      <div>
-        <h1 class="counter" data-target="500">0</h1>
-        <h4>Cups of Coffee</h4>
-      </div>
-    </div>
-  </section>
-
-  <div class="love">
-    <h1>more project on <u style="color: rgb(255, 187, 0)">github</u></h1>
-    <p>i love to solve business problems & uncover hidden data stories</p>
-    <a href="#">github</a>
-  </div>
-
-  <section class="contact">
-    <div>
-      <h1>contact me</h1>
-      <p>Below are the details to reach out to me!</p>
-    </div>
-    <div class="contact-part">
-      <div>
-        <div>
-          <i class="fa-solid fa-signs-post"></i>
-          <h3>address</h3>
-          <p>indore</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-phone"></i>
-          <h3>contact</h3>
-          <p>830512906</p>
-        </div>
-        <div>
-          <i class="fa-brands fa-telegram"></i>
-          <h3>email address</h3>
-          <p>meenanger830@gamil.com</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-download"></i>
-          <h3>donwload resume</h3>
-          <p>resumelink</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="footer">
-    <div>
-      <h1>have a Question?</h1>
-      <a href="form.html">click here</a>
-    </div>
-    <div>
-      <h2>find me on..</h2>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <div class="end">
-      <p>
-        copyright @2024 all rights reserved | this portfolio is made with by
-        meena nager
-      </p>
-    </div>
-  </section>
-
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <script src="script.js"></script>
-</body>
-
+   
+    <script src="script.js"></script>
+  </body>
 </html>
